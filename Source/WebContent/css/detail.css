@@ -1,0 +1,263 @@
+@CHARSET "UTF-8";
+.left-1 {
+	width: 45%;
+	min-height: 50%;
+	border: 0px solid #CDCDCD;
+	float: left;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.left-1 img {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+.left-2 {
+	margin-top: 20px;
+	width: 54.3%;
+	min-height: 50%;
+	border: 0px solid #CDCDCD;
+	float: left;
+}
+
+.left-3 {
+	min-height: 50px;
+	clear: both;
+	border: 0px solid #CDCDCD;
+	text-align: center;
+}
+
+.left-3 img {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+.row1 {
+	background: Gainsboro;
+}
+
+.row2 {
+	background: white;
+}
+
+.col1 {
+	width: 170px;
+	text-align: left;
+	padding: 8px;
+	padding-left: 10px;
+}
+
+.col2 {
+	width: 350px;
+	text-align: left;
+	padding: 8px;
+	padding-left: 10px;
+}
+
+.detail-1 {
+	width: 200px;
+	text-align: left;
+	padding: 8px;
+	padding-left: 10px;
+	color: blue;
+	font-size: 15px;
+}
+
+.detail-2 {
+	width: 230px;
+	text-align: left;
+	padding: 8px;
+	padding-left: 10px;
+	background: Gainsboro;
+}
+
+.detail-3 {
+	width: 300px;
+	text-align: left;
+	padding: 8px;
+	padding-left: 10px;
+}
+
+article {
+	margin-bottom: 3rem;
+	position: relative;
+	*zoom: 1;
+}
+
+article:before,article:after {
+	content: "";
+	display: table;
+}
+
+article:after {
+	clear: both
+}
+
+article figure {
+	float: left;
+}
+
+article section:first-of-type {
+	float: left;
+	width: 100%;
+}
+
+article section:last-of-type {
+	display: none;
+	visibility: hidden;
+}
+
+section {
+	-webkit-transition: .125s linear;
+	-moz-transition: .125s linear;
+	-ms-transition: .125s linear;
+	-o-transition: .125s linear;
+	transition: .125s linear;
+}
+
+input[type=checkbox] {
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 500px;
+}
+
+[for="read_more"] {
+	position: absolute;
+	bottom: -3rem;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	padding: .70rem;
+	box-shadow: inset 1px 1px rgba(0, 0, 0, 0.1), inset -1px -1px
+		rgba(0, 0, 0, 0.1);
+}
+
+[for="read_more"]:hover {
+	background: rgba(0, 0, 0, .5);
+	color: rgb(255, 255, 255);
+}
+
+[for="read_more"] span:last-of-type {
+	display: none;
+	visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ section {
+	display: block;
+	visibility: visible;
+	width: 100%;
+}
+
+input[type=checkbox]:checked ~ figure {
+	width: 100%;
+}
+
+input[type=checkbox]:checked ~ [for="read_more"] span:first-of-type {
+	display: none;
+	visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="read_more"] span:last-of-type {
+	display: block;
+	visibility: visible;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Open Sans Light'), local('OpenSans-Light'),
+		url(http://cdn.tgdd.vn/fonts/opensans/DXI1ORHCpsQm3Vp6mXoaTXwUvq1pQaUIDqPgpae5ItU.woff)
+		format('woff')
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Open Sans'), local('OpenSans'),
+		url(http://cdn.tgdd.vn/fonts/opensans/59ZRklaO5bWGqF5A9baEET8E0i7KZn-EPnyo3HZu7kw.woff)
+		format('woff')
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 600;
+	src: local('Open Sans Semibold'), local('OpenSans-Semibold'),
+		url(http://cdn.tgdd.vn/fonts/opensans/MTP_ySUJH_bn48VBG8sNSnwUvq1pQaUIDqPgpae5ItU.woff)
+		format('woff')
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Open Sans Bold'), local('OpenSans-Bold'),
+		url(http://cdn.tgdd.vn/fonts/opensans/k3k702ZOKiLJc3WVjuplzHwUvq1pQaUIDqPgpae5ItU.woff)
+		format('woff')
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 800;
+	src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'),
+		url(http://cdn.tgdd.vn/fonts/opensans/EInbV5DfGHOiMmvb1Xr-hnwUvq1pQaUIDqPgpae5ItU.woff)
+		format('woff')
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: italic;
+	font-weight: 300;
+	src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'),
+		url(http://cdn.tgdd.vn/fonts/opensans/PRmiXeptR36kaC0GEAetxsJIfR0j-Hc3mXsqdoe9vx8.woff)
+		format('woff')
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: italic;
+	font-weight: 400;
+	src: local('Open Sans Italic'), local('OpenSans-Italic'),
+		url(http://cdn.tgdd.vn/fonts/opensans/xjAJXh38I15wypJXxuGMBkbnXQ06sCSpaytluCdpFnY.woff)
+		format('woff')
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: italic;
+	font-weight: 600;
+	src: local('Open Sans Semibold Italic'),
+		local('OpenSans-SemiboldItalic'),
+		url(http://cdn.tgdd.vn/fonts/opensans/PRmiXeptR36kaC0GEAetxrkV11xRSeRSsXvODowCrgc.woff)
+		format('woff')
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: italic;
+	font-weight: 700;
+	src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'),
+		url(http://cdn.tgdd.vn/fonts/opensans/PRmiXeptR36kaC0GEAetxttxB2icnUq6NyCcJOfFtRI.woff)
+		format('woff')
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: italic;
+	font-weight: 800;
+	src: local('Open Sans Extrabold Italic'),
+		local('OpenSans-ExtraboldItalic'),
+		url(http://cdn.tgdd.vn/fonts/opensans/PRmiXeptR36kaC0GEAetxq6EGkuGQVtC-K3yp5dayWY.woff)
+		format('woff')
+}

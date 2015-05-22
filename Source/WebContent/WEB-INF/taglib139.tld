@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN" "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd"> 
+
+<taglib> 
+<tlibversion>1.8</tlibversion>
+<jspversion>1.1</jspversion>
+<shortname>Paging for data</shortname>
+<uri>http://www.servletsuite.com/servlets/pager</uri>
+<info>Paging for data</info> 
+
+<tag>
+<name>paging</name>
+<tagclass>com.cj.pager.pagingTag</tagclass>
+<teiclass>com.cj.pager.intVariable</teiclass>
+<bodycontent>JSP</bodycontent>
+<info>splits data</info>
+
+<attribute>
+<name>idPage</name>
+<required>false</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+
+<attribute>
+<name>url</name>
+<required>false</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+
+<attribute>
+<name>pageSize</name>
+<required>false</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+
+<attribute>
+<name>indexSize</name>
+<required>false</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+
+<attribute>
+<name>page</name>
+<required>false</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+
+</tag>
+
+<tag>
+<name>item</name>
+<tagclass>com.cj.pager.itemTag</tagclass>
+<bodycontent>JSP</bodycontent>
+<info>defines an item</info>
+
+<attribute>
+<name>invokeAll</name>
+<required>false</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+
+</tag>
+
+<tag>
+<name>index</name>
+<tagclass>com.cj.pager.indexTag</tagclass>
+<bodycontent>JSP</bodycontent>
+<info>defines an index</info>
+
+<attribute>
+<name>title</name>
+<required>false</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+</tag>
+
+<tag>
+<name>title</name>
+<tagclass>com.cj.pager.indexTitleTag</tagclass>
+<bodycontent>JSP</bodycontent>
+<info>defines a title for index</info>
+</tag>
+
+
+<tag>
+<name>page</name>
+<tagclass>com.cj.pager.pageTag</tagclass>
+<teiclass>com.cj.pager.intVariable1</teiclass>
+<bodycontent>JSP</bodycontent>
+<info>defines a link for the page</info>
+</tag>
+
+<tag>
+<name>firstPage</name>
+<tagclass>com.cj.pager.firstPageTag</tagclass>
+<bodycontent>JSP</bodycontent>
+<info>defines a first page</info>
+</tag>
+
+<tag>
+<name>lastPage</name>
+<tagclass>com.cj.pager.lastPageTag</tagclass>
+<bodycontent>JSP</bodycontent>
+<info>defines a last page</info>
+</tag>
+
+<tag>
+<name>prevPages</name>
+<tagclass>com.cj.pager.prevPagesTag</tagclass>
+<teiclass>com.cj.pager.intVariable1</teiclass>
+<bodycontent>JSP</bodycontent>
+<info>defines a previous item</info>
+</tag>
+
+<tag>
+<name>nextPages</name>
+<tagclass>com.cj.pager.nextPagesTag</tagclass>
+<teiclass>com.cj.pager.intVariable1</teiclass>
+<bodycontent>JSP</bodycontent>
+<info>defines a next item</info>
+</tag>
+
+</taglib> 

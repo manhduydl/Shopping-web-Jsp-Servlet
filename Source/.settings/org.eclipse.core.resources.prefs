@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//src/controller/ConfirmServlet.java=UTF-8
+encoding//src/controller/GioHangServlet.java=UTF-8
+encoding//src/controller/LoginServlet.java=UTF-8
+encoding//src/controller/RegisterServlet.java=UTF-8
+encoding//src/controller/ResetPassword.java=UTF-8
+encoding//src/controller/SearchServlet.java=UTF-8
+encoding//src/controller/UpdateUser.java=UTF-8
+encoding//src/dao/CategoryDAOImpl.java=UTF-8
+encoding//src/dao/HistoryDAO.java=UTF-8

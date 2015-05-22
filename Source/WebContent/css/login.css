@@ -1,0 +1,856 @@
+/*--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video
+	{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section
+	{
+	display: block;
+}
+
+ol,ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+blockquote,q {
+	quotes: none;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* start editing from here */
+a {
+	text-decoration: none;
+}
+
+.txt-rt {
+	text-align: right;
+} /* text align right */
+.txt-lt {
+	text-align: left;
+} /* text align left */
+.txt-center {
+	text-align: center;
+} /* text align center */
+.float-rt {
+	float: right;
+} /* float right */
+.float-lt {
+	float: left;
+} /* float left */
+.clear {
+	clear: both;
+} /* clear float */
+.pos-relative {
+	position: relative;
+} /* Position Relative */
+.pos-absolute {
+	position: absolute;
+} /* Position Absolute */
+.vertical-base {
+	vertical-align: baseline;
+} /* vertical align baseline */
+.vertical-top {
+	vertical-align: top;
+} /* vertical align top */
+nav.vertical ul li {
+	display: block;
+} /* vertical menu */
+nav.horizontal ul li {
+	display: inline-block;
+} /* horizontal menu */
+img {
+	max-width: 100%;
+}
+/*end reset*/
+/****-----start-body----****/
+body {
+	background: #3aada9;
+	font-family: 'Cabin', sans-serif;
+}
+
+.wrap {
+	margin: 0 auto;
+	width: 80%;
+}
+
+body a,form li,.submit input[type="submit"] {
+	transition: 0.1s all;
+	-webkit-transition: 0.1s all;
+	-moz-transition: 0.1s all;
+	-o-transition: 0.1s all;
+}
+
+.one-login-head {
+	background: #ffc50c;
+	padding: 1em 1em;
+	text-align: center;
+	position: relative;
+}
+
+.one-login-head span {
+	background: url('../images/tip.png') no-repeat 0px 0px;
+	width: 30px;
+	height: 13px;
+	position: absolute;
+	bottom: -12px;
+	left: 203px;
+	display: inline-block;
+}
+
+.one-login {
+	width: 28%;
+	margin: 5% auto;
+	background: #fff;
+	text-align: center;
+	border-bottom: 3px solid #1c817c;
+}
+/* Float Shadow */
+.hvr-float-shadow {
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	position: relative;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+}
+
+.hvr-float-shadow:before {
+	pointer-events: none;
+	position: absolute;
+	z-index: -1;
+	content: '';
+	top: 105%;
+	left: 5%;
+	height: 52px;
+	width: 95%;
+	opacity: 0.5;
+	background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.16)
+		0%, rgba(0, 0, 0, 0) 80%);
+	background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.18) 0%,
+		rgba(0, 0, 0, 0) 80%);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform, opacity;
+	transition-property: transform, opacity;
+}
+
+.hvr-float-shadow:hover,.hvr-float-shadow:focus,.hvr-float-shadow:active
+	{
+	-webkit-transform: translateY(-5px);
+	transform: translateY(-5px);
+	/* move the element up by 5px */
+}
+
+.hvr-float-shadow:hover:before,.hvr-float-shadow:focus:before,.hvr-float-shadow:active:before
+	{
+	opacity: 1;
+	-webkit-transform: translateY(5px);
+	transform: translateY(5px);
+	/* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+
+.one-login-head h1 {
+	font-size: 2em;
+	color: #fff;
+	font-weight: 500;
+}
+
+form {
+	padding: 12% 9%;
+}
+
+form li {
+	border: none;
+	list-style: none;
+	margin-bottom: 25px;
+	width: 100%;
+	background: #dfdfdf;
+}
+
+.icon {
+	height: 45px;
+	width: 46px;
+	display: block;
+	float: left;
+	margin: 1px -13px 0px 0px;
+}
+
+.user {
+	background: url(../images/icon.png) no-repeat 0px -1px #ffc50c;
+}
+
+.lock {
+	background: url(../images/icon.png) no-repeat -49px 0px #ffc50c;
+}
+
+input[type="text"],input[type="password"],input[type="date"] {
+	width: 60%;
+	padding: 0.8em 4em 0.8em 1.7em;
+	color: #858282;
+	font-size: 17px;
+	outline: none;
+	background: none;
+	font-weight: 500;
+	border: none;
+}
+
+.submit {
+	border-bottom: 1px dashed #999;
+	padding: 23px 0;
+}
+
+.submit input[type="submit"] {
+	font-size: 20px;
+	font-weight: 400;
+	color: #fff;
+	cursor: pointer;
+	outline: none;
+	padding: 13px 10px;
+	width: 100%;
+	border: none;
+	background: #ffc50c;
+}
+
+input[type="submit"]:hover {
+	background: #D13E2F;
+}
+
+h6 {
+	float: right;
+}
+/*----------*/
+.p-container {
+	margin-top: 1em;
+}
+
+.p-container  .checkbox input {
+	position: absolute;
+	left: -9999px;
+}
+
+.p-container.checkbox i {
+	border-color: #fff;
+	transition: border-color 0.3s;
+	-o-transition: border-color 0.3s;
+	-ms-transition: border-color 0.3s;
+	-moz-transition: border-color 0.3s;
+	-webkit-transition: border-color 0.3s;
+}
+
+.p-container.checkbox i:hover {
+	border-color: red;
+}
+
+.p-container  i:before {
+	background-color: #2da5da;
+}
+
+.p-container  .rating label {
+	color: #ccc;
+	transition: color 0.3s;
+	-o-transition: color 0.3s;
+	-ms-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	-webkit-transition: color 0.3s;
+}
+
+.p-container  .checkbox input+i:after {
+	position: absolute;
+	opacity: 0;
+	transition: opacity 0.1s;
+	-o-transition: opacity 0.1s;
+	-ms-transition: opacity 0.1s;
+	-moz-transition: opacity 0.1s;
+	-webkit-transition: opacity 0.1s;
+}
+
+.p-container .checkbox input+i:after {
+	content: url(../images/tick.png) no-repeat 7px 1px;
+	top: 5px;
+	left: 5px;
+	width: 13px;
+	height: 12px;
+}
+
+.p-container.checkbox {
+	float: left;
+	margin-right: 30px;
+}
+
+.p-container .checkbox {
+	padding-left: 40px;
+	font-size: 16px;
+	line-height: 14px;
+	color: #858282;
+	cursor: pointer;
+}
+
+.p-container  .checkbox {
+	position: relative;
+	display: block;
+}
+
+.p-container  h6 a {
+	float: right;
+	color: #898989;
+}
+
+.p-container  h6 a:hover {
+	text-decoration: underline;
+}
+
+label.checkbox {
+	float: left;
+	margin-top: 3px;
+}
+
+.p-container  .checkbox i {
+	position: absolute;
+	top: -5px;
+	left: 5px;
+	display: block;
+	width: 22px;
+	height: 22px;
+	outline: none;
+	border: none;
+	background: #dfdfdf;
+}
+
+.p-container  .checkbox input+i:after {
+	position: absolute;
+	opacity: 0;
+	transition: opacity 0.1s;
+	-o-transition: opacity 0.1s;
+	-ms-transition: opacity 0.1s;
+	-moz-transition: opacity 0.1s;
+	-webkit-transition: opacity 0.1s;
+}
+
+.p-container .checkbox input+i:after {
+	color: #2da5da;
+}
+
+.p-container .checkbox input:checked+i,.p-container . input:checked+i {
+	border-color: #2da5da;
+}
+
+.p-container .rating input:checked ~ label {
+	color: #2da5da;
+}
+
+.p-container .checkbox input:checked+i:after {
+	opacity: 1;
+}
+
+.social-icons p {
+	color: #898989;
+	font-size: 17px;
+	text-align: center;
+	padding-top: 20px;
+}
+
+ul.soc_icons2 {
+	text-align: center;
+	padding: 12px 0;
+}
+
+ul.soc_icons2 li.pic {
+	background: none;
+	display: inline-block;
+	width: 24%;
+	margin: 0;
+}
+
+ul.soc_icons2 li.pic i {
+	width: 68px;
+	height: 68px;
+	display: inline-block;
+	background: url('../images/icon.png') no-repeat 0px 0px;
+	vertical-align: middle;
+	-webkit-transition: 0.8s;
+	-moz-transition: 0.8s;
+	-o-transition: 0.8s;
+	transition: 0.8s;
+}
+
+ul.soc_icons2 li.pic i:hover {
+	border-top-left-radius: 3em;
+	-o-border-top-left-radius: 3em;
+	-moz-border-top-left-radius: 3em;
+	-webkit-border-top-left-radius: 3em;
+}
+
+ul.soc_icons2 li.pic a:hover {
+	text-decoration: none;
+}
+
+ul.soc_icons2 li.pic a i.icon_4 {
+	background-position: -106px 4px;
+}
+
+ul.soc_icons2 li.pic a i.icon_5 {
+	background-position: -204px 4px;
+}
+
+ul.soc_icons2 li.pic a i.icon_6 {
+	background-position: -302px 4px;
+}
+
+.one-login h5 a,.one-login  h5 {
+	color: #898989;
+	font-size: 16px;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.one-login h5 a:hover {
+	text-decoration: underline;
+}
+/*---login-02---------*/
+.two-login-head {
+	background: #702c91;
+	padding: 1em 1em;
+	text-align: center;
+	position: relative;
+}
+
+.two-login-head h2 {
+	font-size: 2em;
+	color: #fff;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.two-login-head lable {
+	background: url('../images/tip2.png') no-repeat 0px 0px;
+	width: 30px;
+	height: 13px;
+	position: absolute;
+	bottom: -11px;
+	left: 203px;
+	display: inline-block;
+}
+
+.two-login h5,.two-login h5 a {
+	color: #848484;
+	font-size: 16px;
+}
+
+.two-login h5 a {
+	font-weight: 600;
+}
+
+.two-login h5 a:hover {
+	text-decoration: underline;
+}
+
+.two-login {
+	width: 28%;
+	margin: 5% auto;
+	background: #fff;
+	text-align: center;
+	border-bottom: 3px solid #1c817c;
+}
+
+.two-login-head h1 {
+	font-size: 2em;
+	color: #fff;
+	font-weight: 500;
+}
+
+form.two {
+	padding: 12% 9%;
+}
+
+form.two li {
+	border: none;
+	list-style: none;
+	margin-bottom: 25px;
+	width: 100%;
+	background: #dfdfdf;
+}
+
+.login-02 {
+	margin-top: 9em;
+}
+
+.icon2 {
+	height: 45px;
+	width: 46px;
+	display: block;
+	float: left;
+	margin: 1px -13px 0px 0px;
+}
+
+.user2 {
+	background: url(../images/icon2.png) no-repeat 0px -1px #702c91;
+}
+
+.lock2 {
+	background: url(../images/icon2.png) no-repeat -49px 0px #702c91;
+}
+
+.mail {
+	background: url(../images/icon2.png) no-repeat -99px 0px #702c91;
+}
+
+form.two input[type="text"],form.two input[type="password"] {
+	width: 60%;
+	padding: 0.8em 4em 0.8em 1.7em;
+	color: #858282;
+	font-size: 17px;
+	outline: none;
+	background: none;
+	font-weight: 500;
+	border: none;
+}
+
+.submit.two {
+	border: none;
+	padding: 41px 0 20px 0;
+}
+
+.submit.two input[type="submit"] {
+	font-size: 20px;
+	font-weight: 400;
+	color: #fff;
+	cursor: pointer;
+	outline: none;
+	padding: 13px 10px;
+	width: 100%;
+	border: none;
+	background: #702c91;
+}
+
+.submit.two input[type="submit"]:hover {
+	background: #ffc50c;
+}
+
+.p-container a {
+	color: #702C91;
+	font-size: 15px;
+}
+
+.p-container a:hover {
+	text-decoration: underline;
+}
+/*---login-three----------*/
+.three-login-head {
+	background: #f26122;
+	padding: 1em 1em;
+	text-align: center;
+	position: relative;
+}
+
+.three-login-head h3 {
+	font-size: 2em;
+	color: #fff;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.three-login-head lable {
+	background: url('../images/tip3.png') no-repeat 0px 0px;
+	width: 30px;
+	height: 13px;
+	position: absolute;
+	bottom: -11px;
+	left: 203px;
+	display: inline-block;
+}
+
+.three-login h5,.three-login h5 a {
+	color: #848484;
+	font-size: 16px;
+	text-align: left;
+}
+
+.three-login h5 a:hover {
+	text-decoration: underline;
+}
+
+.three-login p {
+	color: #848484;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 10px 0 20px 0;
+	text-align: left;
+}
+
+.three-login {
+	width: 28%;
+	margin: 5% auto;
+	background: #fff;
+	text-align: center;
+	border-bottom: 3px solid #1c817c;
+}
+
+.three-login-head h1 {
+	font-size: 2em;
+	color: #fff;
+	font-weight: 500;
+}
+
+form.three {
+	padding: 12% 9%;
+}
+
+form.three li {
+	border: none;
+	list-style: none;
+	margin-bottom: 25px;
+	width: 100%;
+	background: #dfdfdf;
+}
+
+.login-03 {
+	margin-top: 9em;
+}
+
+.icon3 {
+	height: 45px;
+	width: 46px;
+	display: block;
+	float: left;
+	margin: 1px -13px 0px 0px;
+}
+
+.mail2 {
+	background: url(../images/mail.png) no-repeat -0px 0px #f26122;
+}
+
+form.three input[type="text"],form.three input[type="password"] {
+	width: 60%;
+	padding: 0.8em 4em 0.8em 1.7em;
+	color: #858282;
+	font-size: 17px;
+	outline: none;
+	background: none;
+	font-weight: 500;
+	border: none;
+}
+
+.submit.three {
+	border: none;
+	padding: 8px 0 13px 0;
+}
+
+.submit.three input[type="submit"] {
+	font-size: 20px;
+	font-weight: 400;
+	color: #fff;
+	cursor: pointer;
+	outline: none;
+	padding: 13px 10px;
+	width: 100%;
+	border: none;
+	background: #f26122;
+}
+
+.submit.three input[type="submit"]:hover {
+	background: #ffc50c;
+}
+/****************/
+.copy-right {
+	text-align: center;
+	margin: 10% 0 2% 0;
+}
+
+.copy-right p {
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: 400;
+}
+
+.copy-right p a {
+	font-size: 1em;
+	color: #fff;
+}
+
+.copy-right p a:hover {
+	text-decoration: underline;
+}
+/*-----start-responsive-design------*/
+@media ( max-width :1440px) {
+	.three-login,.two-login,.one-login {
+		width: 31%;
+	}
+}
+
+@media ( max-width :1366px) {
+	.three-login,.two-login,.one-login {
+		width: 32%;
+	}
+}
+
+@media ( max-width :1280px) {
+	.three-login,.two-login,.one-login {
+		width: 35%;
+	}
+	.login-02,.login-03 {
+		margin-top: 7em;
+	}
+}
+
+@media ( max-width :1024px) {
+	.three-login,.two-login,.one-login {
+		width: 43%;
+	}
+	.three-login-head h3,.one-login-head h1,.two-login-head h2 {
+		font-size: 1.7em;
+	}
+}
+
+@media ( max-width :768px) {
+	.three-login,.two-login,.one-login {
+		width: 58%;
+	}
+	form {
+		padding: 12% 6%;
+	}
+}
+
+@media ( max-width :640px) {
+	.three-login,.two-login,.one-login {
+		width: 70%;
+	}
+	.three-login-head h3,.one-login-head h1,.two-login-head h2 {
+		font-size: 1.55em;
+	}
+}
+
+@media ( max-width :480px) {
+	.three-login,.two-login,.one-login {
+		width: 95%;
+	}
+	.copy-right p {
+		font-size: 1em;
+	}
+	form {
+		padding: 12% 5%;
+	}
+	.copy-right p {
+		font-size: 1.05em;
+		line-height: 1.5em;
+	}
+}
+
+@media ( max-width :320px) {
+	.one-login-head img,.two-login-head img,.three-login-head img {
+		width: 16%;
+	}
+	input[type="text"],input[type="password"] {
+		width: 62%;
+		padding: 0.9em 1em 0.9em 1.7em;
+		color: #858282;
+		font-size: 16px;
+	}
+	.social-icons p {
+		font-size: 15px;
+		padding-top: 18px;
+		line-height: 23px;
+	}
+	label.checkbox {
+		float: none;
+		margin-top: 3px;
+	}
+	.p-container .checkbox {
+		padding-left: 0px;
+	}
+	.p-container h6,.p-container h6 a {
+		float: none;
+		margin-top: 10px;
+	}
+	.p-container {
+		margin-top: 0;
+	}
+	ul.soc_icons2 li.pic {
+		width: 32%;
+	}
+	.one-login h5 a,.one-login h5 {
+		font-size: 15px;
+	}
+	.three-login-head h3,.one-login-head h1,.two-login-head h2 {
+		font-size: 1.3em;
+	}
+	.submit input[type="submit"],.submit.two input[type="submit"],.submit.three input[type="submit"]
+		{
+		font-size: 18px;
+		padding: 13px 10px;
+	}
+	.two-login h5,.two-login h5 a {
+		font-size: 15px;
+	}
+	.three-login p {
+		font-size: 14px;
+	}
+	.three-login h5,.three-login h5 a {
+		font-size: 15px;
+	}
+	form {
+		padding: 12% 4%;
+	}
+	.p-container a {
+		font-size: 14px;
+	}
+	.three-login,.two-login,.one-login {
+		width: 94%;
+	}
+	form li {
+		margin-bottom: 14px;
+	}
+	.submit.three {
+		padding: 1px 0 13px 0;
+	}
+	.submit.two {
+		padding: 22px 0 20px 0;
+	}
+	.p-container .checkbox i {
+		position: absolute;
+		top: -3px;
+		left: 39px;
+	}
+	.p-container label.checkbox.two i {
+		position: absolute;
+		top: -5px;
+		left: 5px;
+	}
+	.one-login-head span,.two-login-head lable,.three-login-head lable {
+		bottom: -11px;
+		left: 129px;
+	}
+	.login-02,.login-03 {
+		margin-top: 7em;
+	}
+	.login-02,.login-03 {
+		margin-top: 6em;
+	}
+}

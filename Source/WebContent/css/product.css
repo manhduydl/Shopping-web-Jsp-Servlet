@@ -1,0 +1,600 @@
+@CHARSET "UTF-8";
+
+.align-center {
+	margin: 0 auto
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0
+}
+
+* html .clearfix {
+	zoom: 1
+}
+
+*:first-child+html .clearfix {
+	zoom: 1
+}
+
+.products {
+	overflow: hidden;
+	float: left;
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	list-style: none;
+	margin: 0;
+	min-width: 1084px;
+}
+
+.products li {
+	float: left;
+	position: relative;
+	width: 215px;
+	height: 215px;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	background: #fff;
+	overflow: hidden;
+	margin: 0
+}
+
+.products.homepage {
+	min-width: 600px
+}
+
+.products.homepage li {
+	width: 199px
+}
+
+.products li h1,.products li h2,.products li h3,.products li h4,.products li h5,.products li h6
+	{
+	margin: 0
+}
+
+.products li a {
+	display: table-cell;
+	width: 205px;
+	height: 205px;
+	padding: 5px;
+	overflow: hidden;
+	vertical-align: bottom
+}
+
+.products li a h3 {
+	font-size: 14px;
+	font-weight: normal;
+	color: #333;
+	line-height: 14px;
+	-webkit-transition: all 300ms ease 100ms;
+	-moz-transition: all 300ms ease 100ms;
+	transition: all 300ms ease 100ms;
+	display: block
+}
+
+.products li a img {
+	max-width: 120px;
+	max-height: 120px;
+	margin: 5px auto 10px;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 10px
+}
+
+.products li a h4 {
+	color: red;
+	font-size: 14px;
+	font-weight: bold;
+	-webkit-transition: all 300ms ease 100ms;
+	-moz-transition: all 300ms ease 100ms;
+	transition: all 300ms ease 100ms;
+	display: table-cell;
+	line-height: inherit
+}
+
+.products li a h5 {
+	color: #888;
+	padding-left: 8px;
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: line-through;
+	line-height: 18px;
+	display: table-cell
+}
+
+.products li .textkm {
+	display: table-row;
+	vertical-align: bottom;
+	font-size: 11px;
+	color: #999;
+	height: 10px;
+	line-height: 10px
+}
+
+.products li .textkm strong {
+	margin-right: 5px;
+	color: red;
+	font-weight: 700
+}
+
+.products li .banonline {
+	text-transform: uppercase;
+	font-size: 9px;
+	font-weight: 700;
+	color: #0876e6;
+	display: table-row
+}
+
+.products li .giaohang2-7 {
+	text-transform: uppercase;
+	font-size: 9px;
+	font-weight: 700;
+	color: #0876e6;
+	display: table-row
+}
+
+.products li .ngung-kd {
+	text-transform: uppercase;
+	font-size: 9px;
+	font-weight: 700;
+	color: #b00;
+	display: table-row
+}
+
+.products li .uudailon {
+	text-transform: uppercase;
+	font-size: 9px;
+	font-weight: 700;
+	color: #0876e6;
+	display: table-row
+}
+
+.products li .dattruoc {
+	text-transform: uppercase;
+	font-size: 9px;
+	font-weight: 700;
+	color: #0876e6;
+	display: table-row
+}
+
+.products li.double-col .uudailon {
+	position: absolute;
+	right: 5px;
+	bottom: 0
+}
+
+.products li .tagmoi {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	z-index: 2;
+	background: #006dbb;
+	border-radius: 3px;
+	padding: 0 5px;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 13px;
+	font-weight: 700;
+	height: 20px;
+	line-height: 20px
+}
+
+.products li .tagkmlon {
+	background: #ff8a00
+}
+
+.products li .taguudailon {
+	background: #06b70f
+}
+
+.products li .taggiasoc {
+	background: #b00
+}
+
+.products li .tagdattruoc {
+	background: #06b70f
+}
+
+.products li .tagimg {
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 2;
+	width: 61px;
+	height: 58px
+}
+
+.products li .tagimg.hot {
+	background: url(../images/icon-hot.png) no-repeat
+}
+
+.products li .tagimg.downprice {
+	background: url(../images/icon-downprice.png) no-repeat
+}
+
+.products li .btncompare {
+	display: block;
+	cursor: pointer;
+	background: #8e8e8e;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	width: 115px;
+	height: 17px;
+	padding-bottom: 3px;
+	position: absolute;
+	bottom: 85px;
+	left: 24%;
+	z-index: 100;
+	border-radius: 3px 3px 3px 3px;
+	-webkit-border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	transition: all .5s ease;
+	-ms-opacity: 0;
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity = 0)
+}
+
+.products li:hover .btncompare {
+	-ms-opacity: 1;
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity = 100);
+	-khtml-opacity: 1
+}
+
+.products li .btncompare2 {
+	bottom: 60px
+}
+
+.products li .info {
+	display: block;
+	overflow: hidden;
+	-ms-opacity: 0;
+	opacity: 0;
+	background: rgba(0, 0, 0, 0);
+	height: 120px;
+	width: 91%;
+	padding: 10px;
+	font-size: 12px;
+	color: #fff;
+	line-height: 16px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	transition: all .5s ease;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity = 0)
+}
+
+.products li:hover .info {
+	background: rgba(0, 0, 0, .85);
+	-ms-opacity: 1;
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity = 100);
+	-khtml-opacity: 1
+}
+
+.products li .info span {
+	color: #fff;
+	display: block;
+	padding: 2px 6px
+}
+
+@media screen and (max-width:1160px) {
+	.products {
+		min-width: 904px
+	}
+	.products.homepage {
+		min-width: 604px
+	}
+	.products li {
+		width: 179px
+	}
+	.products li .btncompare {
+		left: 17.5%;
+		bottom: 92px
+	}
+	.products li .btncompare2 {
+		bottom: 60px
+	}
+	.products li a img {
+		margin-bottom: 0
+	}
+	.products li .banonline {
+		line-height: 12px
+	}
+	.products li .giaohang2-7 {
+		line-height: 12px
+	}
+	.products li .ngung-kd {
+		line-height: 12px
+	}
+	.products li .uudailon {
+		line-height: 12px
+	}
+	.products li .dattruoc {
+		line-height: 12px
+	}
+	.products li .info {
+		height: 128px;
+		padding: 2px;
+		width: 98%
+	}
+}
+
+html,body,p,a,font,ol,ul,li,form,label,th,td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline
+}
+
+#site-wrapper {
+	line-height: 1;
+	color: #000;
+	background: #fff;
+	width: 802px;
+	color: #333;
+	font-size: 14px;
+	font-family: 'Open Sans', "HelveticaNeue", "Helvetica Neue", Helvetica,
+		Arial, sans-serif;
+	line-height: 18px;
+
+}
+
+#site-wrapper-p {
+	line-height: 1;
+	color: #000;
+	background: #fff;
+	width: 802px;
+	color: #333;
+	font-size: 14px;
+	font-family: 'Open Sans', "HelveticaNeue", "Helvetica Neue", Helvetica,
+		Arial, sans-serif;
+	line-height: 18px;
+	margin 0 auto !important;
+
+}
+
+:focus {
+	outline: 0;
+	outline-width: 0
+}
+
+ol,ul {
+	list-style: none
+}
+
+a img {
+	border: none
+}
+
+
+a {
+	color: #0af;
+	text-decoration: none
+}
+
+a:hover {
+	color: #069;
+	border-bottom: 1px dotted #91b369
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color: #000;
+	font-weight: normal;
+	margin: 0;
+	margin-bottom: 18px;
+	text-rendering: optimizelegibility
+}
+
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a,h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover
+	{
+	border-bottom: none;
+	text-decoration: none
+}
+
+h1 {
+	font-size: 45px;
+	line-height: 54px
+}
+
+h2 {
+	font-size: 36px;
+	line-height: 45px
+}
+
+h3 {
+	font-size: 27px;
+	line-height: 36px
+}
+
+h4 {
+	font-size: 18px;
+	height: auto;
+	line-height: 27px
+}
+
+h5 {
+	font-size: 16px;
+	line-height: 27px
+}
+
+h6 {
+	font-size: 14px;
+	line-height: 18px
+}
+
+ul,ol,p,blockquote {
+	font-size: 13px;
+	line-height: 18px;
+	margin-bottom: 18px
+}
+
+ul,ol {
+	margin-left: 27px
+}
+
+ul {
+	list-style: square
+}
+
+ol {
+	list-style: decimal
+}
+
+ul li,ol li {
+	margin-bottom: 9px
+	font-size: 13px
+}
+
+
+p a {
+	font-size: 13px
+}
+
+ul li ol,ul li ul,ol li ol,ol li ul {
+	margin: 9px 27px 0
+}
+
+ul li ul,ol li ul {
+	list-style-type: disc
+}
+
+ul,ol {
+	
+}
+
+ul.paragraph li,ol.paragraph li,ul li p,ol li p {
+	margin-bottom: 18px
+}
+
+p {
+	text-indent: 0;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+	word-wrap: break-word
+}
+
+strong {
+	font-weight: bold
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Open Sans Light'), local('OpenSans-Light'),
+		url(http://cdn.tgdd.vn/fonts/opensans/DXI1ORHCpsQm3Vp6mXoaTXwUvq1pQaUIDqPgpae5ItU.woff)
+		format('woff')
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Open Sans'), local('OpenSans'),
+		url(http://cdn.tgdd.vn/fonts/opensans/59ZRklaO5bWGqF5A9baEET8E0i7KZn-EPnyo3HZu7kw.woff)
+		format('woff')
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 600;
+	src: local('Open Sans Semibold'), local('OpenSans-Semibold'),
+		url(http://cdn.tgdd.vn/fonts/opensans/MTP_ySUJH_bn48VBG8sNSnwUvq1pQaUIDqPgpae5ItU.woff)
+		format('woff')
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Open Sans Bold'), local('OpenSans-Bold'),
+		url(http://cdn.tgdd.vn/fonts/opensans/k3k702ZOKiLJc3WVjuplzHwUvq1pQaUIDqPgpae5ItU.woff)
+		format('woff')
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 800;
+	src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'),
+		url(http://cdn.tgdd.vn/fonts/opensans/EInbV5DfGHOiMmvb1Xr-hnwUvq1pQaUIDqPgpae5ItU.woff)
+		format('woff')
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: italic;
+	font-weight: 300;
+	src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'),
+		url(http://cdn.tgdd.vn/fonts/opensans/PRmiXeptR36kaC0GEAetxsJIfR0j-Hc3mXsqdoe9vx8.woff)
+		format('woff')
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: italic;
+	font-weight: 400;
+	src: local('Open Sans Italic'), local('OpenSans-Italic'),
+		url(http://cdn.tgdd.vn/fonts/opensans/xjAJXh38I15wypJXxuGMBkbnXQ06sCSpaytluCdpFnY.woff)
+		format('woff')
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: italic;
+	font-weight: 600;
+	src: local('Open Sans Semibold Italic'),
+		local('OpenSans-SemiboldItalic'),
+		url(http://cdn.tgdd.vn/fonts/opensans/PRmiXeptR36kaC0GEAetxrkV11xRSeRSsXvODowCrgc.woff)
+		format('woff')
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: italic;
+	font-weight: 700;
+	src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'),
+		url(http://cdn.tgdd.vn/fonts/opensans/PRmiXeptR36kaC0GEAetxttxB2icnUq6NyCcJOfFtRI.woff)
+		format('woff')
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: italic;
+	font-weight: 800;
+	src: local('Open Sans Extrabold Italic'),
+		local('OpenSans-ExtraboldItalic'),
+		url(http://cdn.tgdd.vn/fonts/opensans/PRmiXeptR36kaC0GEAetxq6EGkuGQVtC-K3yp5dayWY.woff)
+		format('woff')
+}
